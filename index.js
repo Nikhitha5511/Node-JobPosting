@@ -1,17 +1,17 @@
 
 const express = require('express');
 const mongoose = require('mongoose');
-const dotenv = require('dotenv');
+//const dotenv = require('dotenv');
 
 const jobRoutes = require('./routes/jobapp');
 
-dotenv.config();
+//dotenv.config();
 
-console.log(process.env.DB_USERNAME, process.env.DB_PASSWORD);
+//console.log(process.env.DB_USERNAME, process.env.DB_PASSWORD);
 
 const app = express();
  
-mongoose.connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.smstw85.mongodb.net/`)
+mongoose.connect(`mongodb+srv://Nikhitha:nikhitha525@cluster0.smstw85.mongodb.net/`)
  .then(() => {
     console.log("Database Connected successfully");
   })
