@@ -40,7 +40,7 @@ console.log(process.env.DB_USERNAME, process.env.DB_PASSWORD);
 
 const app = express();
  
-mongoose.connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.k5t1n1b.mongodb.net/`)
+mongoose.connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.xfuaxpw.mongodb.net/`)
  .then(() => {
     console.log("Database Connected successfully");
   })
