@@ -19,8 +19,8 @@ app.use(express.json());
 app.use("/api/v1/job/",jobRoutes);
 
 
-app.listen(3000,()=>{
-    console.log("server running at port 30000");
+app.listen(10000,()=>{
+    console.log("server running at port 10000");
 });
 
 
