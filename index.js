@@ -11,7 +11,7 @@ console.log(process.env.DB_USERNAME, process.env.DB_PASSWORD);
 
 const app = express();
  
-mongoose.connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.huazvk7.mongodb.net/`)
+mongoose.connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.smstw85.mongodb.net/`)
  .then(() => {
     console.log("Database Connected successfully");
   })
@@ -25,4 +25,5 @@ app.use("/api/v1/job/", jobRoutes);
 app.listen(10000, () => {
   console.log("Server is running at port 10000");
 });
+
 
